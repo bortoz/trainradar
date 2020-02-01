@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8E02</color>
+    <color name="colorPrimaryDark">#ff7429</color>
+    <color name="colorAccent">#F64B4B</color>
+    <color name="backgroundDark">#F4F4F4</color>
+    <color name="background">#FFFFFF</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorDisable">#A0A0A0</color>
+    <color name="train_delay">#B20000</color>
+    <color name="train_advance">#008000</color>
+    <color name="frecciarossa">#A00000</color>
+    <color name="frecciargento">#5D708F</color>
+    <color name="frecciabianca">#2080C0</color>
+    <color name="intercity">#008020</color>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="near_trains_columns">1</integer>
+    <integer-array name="train_page_width">
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+</resources>

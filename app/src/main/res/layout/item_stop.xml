@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dot1"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/dot"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/dot2"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemStation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dot2"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/dot"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/dot3"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemStation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dot3"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/dot"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/radio"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemStation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot2">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioButton
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:buttonTint="@color/colorDisable"
+        android:clickable="false"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/dot4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dot4"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/dot"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/dot5"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemArrival"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dot5"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/dot"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/dot6"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemArrival"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dot6"
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/dot"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtItemArrival"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dot5" />
+
+    <TextView
+        android:id="@+id/lblItemStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/station"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtItemArrival"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/radio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtItemDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/departure_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemDeparture"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radio"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemArrival" />
+
+    <TextView
+        android:id="@+id/txtItemArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/arrival_label"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtItemDeparture"
+        app:layout_constraintEnd_toStartOf="@+id/lblItemArrival"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/radio"
+        app:layout_constraintTop_toBottomOf="@+id/lblItemStation" />
+
+    <TextView
+        android:id="@+id/lblItemArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/default_time"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtItemDeparture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblItemStation" />
+
+    <TextView
+        android:id="@+id/lblItemDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="@string/default_time"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtItemArrival" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
