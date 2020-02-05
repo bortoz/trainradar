@@ -1,0 +1,59 @@
+Using configuration directory C:/Users/borto\.asy
+Using history C:/Users/borto\.asy/history
+Welcome to Asymptote version 2.47
+cd /cygdrive/d/LaTeX/trainradar/asy
+Processing use_case_diagram
+Loading plain from C:\Program Files (x86)\Asymptote/plain.asy
+Including plain_constants from C:\Program Files (x86)\Asymptote/plain_constants.asy
+Loading version from C:\Program Files (x86)\Asymptote/version.asy
+Including plain_strings from C:\Program Files (x86)\Asymptote/plain_strings.asy
+Including plain_pens from C:\Program Files (x86)\Asymptote/plain_pens.asy
+Including plain_paths from C:\Program Files (x86)\Asymptote/plain_paths.asy
+Including plain_filldraw from C:\Program Files (x86)\Asymptote/plain_filldraw.asy
+Including plain_margins from C:\Program Files (x86)\Asymptote/plain_margins.asy
+Including plain_picture from C:\Program Files (x86)\Asymptote/plain_picture.asy
+Loading plain_scaling from C:\Program Files (x86)\Asymptote/plain_scaling.asy
+Loading simplex from C:\Program Files (x86)\Asymptote/simplex.asy
+Loading plain_bounds from C:\Program Files (x86)\Asymptote/plain_bounds.asy
+Including plain_scaling from C:\Program Files (x86)\Asymptote/plain_scaling.asy
+Including plain_prethree from C:\Program Files (x86)\Asymptote/plain_prethree.asy
+Including plain_Label from C:\Program Files (x86)\Asymptote/plain_Label.asy
+Including plain_shipout from C:\Program Files (x86)\Asymptote/plain_shipout.asy
+Including plain_arcs from C:\Program Files (x86)\Asymptote/plain_arcs.asy
+Including plain_boxes from C:\Program Files (x86)\Asymptote/plain_boxes.asy
+Including plain_markers from C:\Program Files (x86)\Asymptote/plain_markers.asy
+Including plain_arrows from C:\Program Files (x86)\Asymptote/plain_arrows.asy
+Including plain_debugger from C:\Program Files (x86)\Asymptote/plain_debugger.asy
+Loading use_case_diagram from use_case_diagram.asy
+pdflatex \scrollmode
+C:/Program Files/gs/gs9.25/bin/gswin64.exe -q -dNOPAUSE -dBATCH -P -dSAFER -sDEVICE=pdfwrite -dEPSCrop -dSubsetFonts=true -dEmbedAllFonts=true -dMaxSubsetPct=100 -dPDFSETTINGS=/prepress -dCompatibilityLevel=1.4 -dAutoRotatePages=/None -g612x792 -dDEVICEWIDTHPOINTS=575.933 -dDEVICEHEIGHTPOINTS=227.272 -sOutputFile=use_case_diagram_0.pdf use_case_diagram_0.eps
+pdflatex \nonstopmode\input use_case_diagram_.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit)
+entering extended mode
+LaTeX2e <2019-10-01> patch level 3
+
+(use_case_diagram_.tex ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls
+"
+Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"))
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifluatex.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty")
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg")
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def")))
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"))
+No file use_case_diagram_.aux.
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty")
+[1{C:/Users/borto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./use_cas
+e_diagram_0.pdf>] (use_case_diagram_.aux) )<C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb>
+Output written on use_case_diagram_.pdf (1 page, 13838 bytes).
+Transcript written on use_case_diagram_.log.
+Wrote use_case_diagram.pdf
+cmd /c start "" use_case_diagram.pdf
