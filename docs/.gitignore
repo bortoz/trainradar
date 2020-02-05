@@ -55,6 +55,10 @@ acs-*.bib
 # amsthm
 *.thm
 
+# asymptote
+*.asy_log
+asy/*.pdf
+
 # beamer
 *.nav
 *.pre
