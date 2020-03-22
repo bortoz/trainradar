@@ -4,19 +4,18 @@ import android.location.Location;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import java.time.format.DateTimeFormatter;
-
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.time.format.DateTimeFormatter;
+
 import it.trainradar.R;
 import it.trainradar.core.Train;
-import it.trainradar.manager.StationManager;
-import it.trainradar.manager.TimeManager;
 import it.trainradar.manager.TrainManager;
 
 public class TrainAdapterViewHolder extends RecyclerView.ViewHolder {
-    private final CardView view;
-    private final String timeFormat;
+    private CardView view;
+    private String timeFormat;
 
     public TrainAdapterViewHolder(CardView view, OnClickListener onClickListener) {
         super(view);
@@ -36,13 +35,17 @@ public class TrainAdapterViewHolder extends RecyclerView.ViewHolder {
         TextView lblTrainDist = view.findViewById(R.id.lblTrainDist);
 
         lblTrainName.setText(TrainManager.getFormattedName(train));
-        lblTrainStDeparture.setText(StationManager.getStation(train.getIdDeparture()).getName());
-        lblTrainStArrival.setText(StationManager.getStation(train.getIdArrival()).getName());
-        lblTrainDeparture.setText(train.getDeparture().format(DateTimeFormatter.ofPattern(timeFormat)));
-        lblTrainArrival.setText(train.getArrival().format(DateTimeFormatter.ofPattern(timeFormat)));
+        lblTrainStDeparture.setText(train.getDepartureStation().getName());
+        lblTrainStArrival.setText(train.getArrivalStation().getName());
+        lblTrainDeparture.setText(train.getDepartureTime().format(DateTimeFormatter.ofPattern(timeFormat)));
+        lblTrainArrival.setText(train.getArrivalTime().format(DateTimeFormatter.ofPattern(timeFormat)));
 
-        Location trainLocation = train.getLocation(TimeManager.now());
-        float dist = location.distanceTo(trainLocation != null ? trainLocation : StationManager.getStation(train.getIdArrival()).getLocation());
-        lblTrainDist.setText(view.getResources().getString(R.string.distance_label, dist / 1000));
+        Location trainLocation = train.getLocation();
+        if (trainLocation != null) {
+            float dist = location.distanceTo(trainLocation);
+            lblTrainDist.setText(view.getResources().getString(R.string.distance_label, dist / 1000));
+        } else {
+            lblTrainDist.setText("");
+        }
     }
 }

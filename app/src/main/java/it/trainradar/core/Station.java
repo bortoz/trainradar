@@ -8,22 +8,20 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Station implements Serializable {
-    private String id;
-    private ArrayList<String> altIds;
     private String name;
     private LatLng position;
     private ArrayList<String> links;
 
-    public String getId() {
-        return id;
-    }
-
-    public ArrayList<String> getAltIds() {
-        return altIds;
-    }
-
     public String getName() {
         return name;
+    }
+
+    public double getLatitude() {
+        return position.latitude;
+    }
+
+    public double getLongitude() {
+        return position.longitude;
     }
 
     public LatLng getPosition() {
@@ -36,6 +34,10 @@ public class Station implements Serializable {
         location.setLatitude(pos.latitude);
         location.setLongitude(pos.longitude);
         return location;
+    }
+
+    public float distanceTo(Station station) {
+        return getLocation().distanceTo(station.getLocation());
     }
 
     public ArrayList<String> getLinks() {

@@ -10,26 +10,36 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.OffsetDateTime;
+import java.util.concurrent.Semaphore;
 
-public class TimeManager extends JsonManager {
+public class TimeManager extends BaseManager {
     public final static int SEC_PER_DAY = 24 * 60 * 60;
 
+    private static boolean isLoaded = false;
     private static long initTimestamp;
     private static LocalDateTime realTime;
-
+    private static Semaphore requestLock = new Semaphore(1);
 
     public static void load(Context context) {
+        if (isLoaded) return;
+        isLoaded = true;
+
         initTimestamp = System.currentTimeMillis();
         realTime = LocalDateTime.now();
         RequestQueue queue = Volley.newRequestQueue(context);
-        JsonObjectRequest request = new JsonObjectRequest("http://worldtimeapi.org/api/timezone/Europe/Rome", null,
+        JsonObjectRequest request = new JsonObjectRequest("https://worldtimeapi.org/api/timezone/Europe/Rome", null,
                 response -> {
                     try {
                         realTime = OffsetDateTime.parse(response.getString("datetime")).toLocalDateTime();
                         initTimestamp = System.currentTimeMillis();
                     } catch (Exception ignored) {
                     }
-                }, null);
+                    requestLock.release();
+                }, error -> requestLock.release());
+        requestLock.acquireUninterruptibly();
+        executeTask(() -> {
+            requestLock.acquireUninterruptibly();
+        });
         queue.add(request);
     }
 

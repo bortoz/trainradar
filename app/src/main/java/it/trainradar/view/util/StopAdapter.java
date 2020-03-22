@@ -6,21 +6,31 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
 import it.trainradar.R;
 import it.trainradar.core.Train;
 
 public class StopAdapter extends RecyclerView.Adapter<StopAdapterViewHolder> {
-    private final Train train;
+    private Train train;
 
-    public StopAdapter(Train train) {
+    public StopAdapter() {
+        this.train = null;
+    }
+
+    public Train getTrain() {
+        return train;
+    }
+
+    public void setTrain(Train train) {
         this.train = train;
+        notifyDataSetChanged();
     }
 
     @NonNull
     @Override
     public StopAdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ConstraintLayout layout = (ConstraintLayout) LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_stop, parent, false);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        ConstraintLayout layout = (ConstraintLayout) inflater.inflate(R.layout.item_stop, parent, false);
         return new StopAdapterViewHolder(layout);
     }
 
@@ -31,7 +41,7 @@ public class StopAdapter extends RecyclerView.Adapter<StopAdapterViewHolder> {
 
     @Override
     public int getItemCount() {
-        return train.getStops().size();
+        return train == null ? 0 : train.getStops().size();
     }
 }
 

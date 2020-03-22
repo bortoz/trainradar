@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="near_trains_columns">2</integer>
-    <integer-array name="train_page_width">
-        <item>2</item>
-        <item>2</item>
-    </integer-array>
+    <integer name="columns_per_row">2</integer>
 </resources>

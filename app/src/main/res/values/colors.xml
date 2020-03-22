@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF8E02</color>
-    <color name="colorPrimaryDark">#ff7429</color>
-    <color name="colorAccent">#F64B4B</color>
-    <color name="backgroundDark">#F4F4F4</color>
-    <color name="background">#FFFFFF</color>
-    <color name="colorText">#FFFFFF</color>
+    <color name="colorPrimary">#F57C00</color>
+    <color name="colorPrimaryDark">#EF6C00</color>
+    <color name="colorAccent">#E65100</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorBackgroundDark">#F4F4F4</color>
     <color name="colorDisable">#A0A0A0</color>
+    <color name="colorTooltip">@color/colorPrimary</color>
+    <color name="colorTextLight">#FFFFFF</color>
+    <color name="colorTextDark">#444444</color>
     <color name="train_delay">#B20000</color>
     <color name="train_advance">#008000</color>
     <color name="frecciarossa">#A00000</color>

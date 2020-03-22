@@ -3,15 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:orderInCategory="0"
+        android:title="@string/refresh"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/action_my_position"
-        android:icon="@drawable/ic_my_location"
-        android:orderInCategory="3"
+        android:icon="@drawable/ic_location"
+        android:orderInCategory="1"
         android:title="@string/title_activity_near_trains"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search"
-        android:orderInCategory="4"
+        android:orderInCategory="2"
         android:title="@string/search"
         app:showAsAction="ifRoom" />
+
 </menu>

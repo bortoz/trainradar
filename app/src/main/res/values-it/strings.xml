@@ -2,27 +2,35 @@
 <resources>
     <string name="app_name">Train Radar</string>
     <string name="title_activity_radar">Train Radar</string>
-    <string name="title_activity_near_trains">Treni nelle vicinanze</string>
-    <string name="title_activity_train">Dettagli treno</string>
-    <string name="title_train_route_tab">Percorso</string>
-    <string name="title_train_map_tab">Mappa</string>
+    <string name="title_activity_near_trains">Treni nei dintorni</string>
+    <string name="title_activity_map">Percorso del treno</string>
+    <string-array name="tab_titles">
+        <item>Percorso</item>
+        <item>Mappa</item>
+    </string-array>
 
     <string name="time_format">HH:mm</string>
     <string name="default_time">00:00</string>
     <string name="default_dist">0m</string>
     <string name="distance_label">%1$.1f km</string>
+    <string name="hour_eta_label">%1$dh %2$dm all\'arrivo</string>
+    <string name="minute_eta_label">%1$dm all\'arrivo</string>
+    <string name="cancelled">Cancellato</string>
 
+    <string name="update_message">Vuoi aggiornare Train Radar alla versione %1$s?</string>
     <string name="position_request_message">Consenti a TrainRadar di accedere alla tua posizione per monitorare i treni nella tua zona</string>
     <string name="position_error_message">Impossibile trovare la tua posizione</string>
-    <string name="search_message">Cerca un treno</string>
-    <string name="search_number_message">Inserisci il numero del treno</string>
+    <string name="search_message">Inserisci il numero del treno</string>
     <string name="not_found_message">Treno non trovato</string>
+    <string name="not_left_message">Il treno non è ancora partito</string>
+    <string name="many_train_message">Scegli un treno</string>
+    <string name="select_message">Seleziona la categoria</string>
     <string name="arrival_label">Arrivo:</string>
     <string name="departure_label">Partenza:</string>
     <string name="search">Cerca un treno</string>
-    <string name="settings">Impostazioni</string>
-    <string name="locate">Localizza il treno</string>
+    <string name="path_message">Mostra il percorso</string>
     <string name="refresh">Aggiorna</string>
+    <string name="filter">Filtra</string>
 
     <string name="train">Treno</string>
     <string name="station">Stazione</string>

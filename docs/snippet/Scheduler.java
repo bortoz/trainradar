@@ -6,7 +6,7 @@ public class Scheduler {
         handler.post(new Runnable() {
             @Override
             public void run() {
-                LatLng pos = train.getPosition(TimeManager.now());
+                LatLng pos = train.getPosition();
                 marker.setPosition(pos);
                 handler.postDelayed(this, delay);
             }

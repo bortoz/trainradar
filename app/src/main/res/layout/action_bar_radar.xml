@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:translationY="-48dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:theme="@style/AppTheme.ActionBar"
+        android:translationY="48dp" />
+
+    <it.trainradar.view.custom.CustomTabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Widget.MaterialComponents.TabLayout.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:alpha="0"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:tabIndicatorColor="@color/colorTextLight"
+        app:tabTextColor="@color/colorTextLight" />
+
+</com.google.android.material.appbar.AppBarLayout>
