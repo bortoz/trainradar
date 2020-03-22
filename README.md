@@ -1,6 +1,6 @@
 # Train Radar
 
-[Download APK](https://github.com/bortoz/trainradar/releases/tag/v1.0)\
+[Download APK](https://github.com/bortoz/trainradar/releases/tag/v1.1)\
 [Documentazione completa](https://github.com/bortoz/trainradar/blob/master/docs/docs.pdf)
 
 #### Sommario
