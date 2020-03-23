@@ -1,7 +1,8 @@
 # Train Radar
 
 [Download APK](https://github.com/bortoz/trainradar/releases/tag/v1.1)\
-[Documentazione completa](https://github.com/bortoz/trainradar/blob/master/docs/docs.pdf)
+[Documentazione completa](https://github.com/bortoz/trainradar/blob/master/docs/docs.pdf)\
+[Download presentazione](https://github.com/bortoz/trainradar/raw/master/docs/Train%20Radar.pptx)
 
 #### Sommario
 _Train Radar_ è l'applicazione che ti permette di seguire in tempo reale i treni in tutta Italia! Questa applicazione si ispira a _flighradar24_, un'applicazione che mostra la posizione degli aerei in tutto il mondo in diretta, tuttavia non esiste alcuna applicazione simile sul Play Store per i treni. Grazie a _Train Radar_ puoi monitorare i treni di qualsiasi regione, ordinarli in base alla propria distanza e monitorare i ritardi di ogni treno!
